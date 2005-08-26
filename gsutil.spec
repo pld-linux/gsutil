@@ -1,27 +1,30 @@
 Summary:	A utility to save, restore and reboot Grandstream Budgetone phones
+Summary(pl):	Narzêdzie do zapisywania, odtwarzania i restartowania telefonów Grandstream Budgetone
 Name:		gsutil
 Version:	2.1
 Release:	1
+License:	GPL
 Group:		Applications/System
 Source0:	http://www.pkts.ca/%{name}-%{version}.tar.gz
 # Source0-md5:	28010ee2e2881dd6597e27659174ee6a
-License:	GPL
 URL:		http://www.pkts.ca/gsutil.shtml
-BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-BuildArch:	noarch
 Requires:	perl
 Requires:	perl-libwww
 Provides:	gsutil
+BuildArch:	noarch
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 A utility to dump and restore the configuration of the Grandstream
 Budgetone VOIP telephone, up to and including version 1.0.6.7 of the
 firmware.
 
+%description -l pl
+Narzêdzie do zrzucania i odtwarzania konfiguracji telefonów VOIP
+Grandstream Budgetone do wersji firmware'u 1.0.6.7 w³±cznie.
+
 %prep
 %setup -q
-
-%build
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -33,5 +36,5 @@ rm -r $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%attr(755,root,root) %{_bindir}/gsutil
 %doc README Changelog
+%attr(755,root,root) %{_bindir}/gsutil
