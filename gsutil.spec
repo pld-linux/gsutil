@@ -1,5 +1,5 @@
 Summary:	A utility to save, restore and reboot Grandstream Budgetone phones
-Summary(pl):	Narzêdzie do zapisywania, odtwarzania i restartowania telefonów Grandstream Budgetone
+Summary(pl.UTF-8):   NarzÄ™dzie do zapisywania, odtwarzania i restartowania telefonÃ³w Grandstream Budgetone
 Name:		gsutil
 Version:	2.1
 Release:	1
@@ -19,9 +19,9 @@ A utility to dump and restore the configuration of the Grandstream
 Budgetone VOIP telephone, up to and including version 1.0.6.7 of the
 firmware.
 
-%description -l pl
-Narzêdzie do zrzucania i odtwarzania konfiguracji telefonów VOIP
-Grandstream Budgetone do wersji firmware'u 1.0.6.7 w³±cznie.
+%description -l pl.UTF-8
+NarzÄ™dzie do zrzucania i odtwarzania konfiguracji telefonÃ³w VOIP
+Grandstream Budgetone do wersji firmware'u 1.0.6.7 wÅ‚Ä…cznie.
 
 %prep
 %setup -q
