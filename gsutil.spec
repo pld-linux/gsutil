@@ -1,5 +1,5 @@
 Summary:	A utility to save, restore and reboot Grandstream Budgetone phones
-Summary(pl.UTF-8):   Narzędzie do zapisywania, odtwarzania i restartowania telefonów Grandstream Budgetone
+Summary(pl.UTF-8):	Narzędzie do zapisywania, odtwarzania i restartowania telefonów Grandstream Budgetone
 Name:		gsutil
 Version:	2.1
 Release:	1
