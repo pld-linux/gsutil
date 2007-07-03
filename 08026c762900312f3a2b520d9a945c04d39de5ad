@@ -1,0 +1,2 @@
+- simplify install a bit (removed needless macro usage)
+- R: s/perl/perl-base/
