@@ -8,7 +8,7 @@ Group:		Applications/System
 Source0:	http://www.pkts.ca/%{name}-%{version}.tar.gz
 # Source0-md5:	28010ee2e2881dd6597e27659174ee6a
 URL:		http://www.pkts.ca/gsutil.shtml
-Requires:	perl
+Requires:	perl-base
 Requires:	perl-libwww
 Provides:	gsutil
 BuildArch:	noarch
@@ -29,7 +29,8 @@ Grandstream Budgetone do wersji firmware'u 1.0.6.7 włącznie.
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_bindir}
-cp %{_builddir}/%{name}-%{version}/gsutil $RPM_BUILD_ROOT%{_bindir}/gsutil
+
+install gsutil $RPM_BUILD_ROOT%{_bindir}/gsutil
 
 %clean
 rm -r $RPM_BUILD_ROOT
